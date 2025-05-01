@@ -61,7 +61,7 @@ The project uses the [Spotify Web API](https://developer.spotify.com/documentati
 
 ---
 
-### 🎵 Dashboard
+### 🎵 Top Songs Global Analytics
 
 ![Power BI Dashboard](visualization/powerbi.png)
 <!-- Replace with your actual Power BI dashboard screenshot path -->
