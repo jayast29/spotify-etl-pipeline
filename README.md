@@ -28,7 +28,7 @@ This data engineering project focuses on extracting, ingesting, transforming, an
 
 ### 📑 Data Source
 
-The project uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) to access the **Top 50 Global Songs Playlist**, refreshed weekly. The data includes:
+The project uses the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) to access the **Top Songs Global** playlist, refreshed weekly. The data includes:
 
 
 - **Album Info**: Album name, release date, total tracks.
