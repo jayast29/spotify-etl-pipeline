@@ -46,7 +46,7 @@ The project uses the [Spotify Web API](https://developer.spotify.com/documentati
 - Raw JSON data is saved into the **S3 RAW zone**, partitioned by date.
 
 2. **Data Transformation**:
-- **AWS Glue** job is triggered by a Lambda function on an S3 event when new raw data is added..
+- **AWS Glue** job is triggered by the Lambda function on an S3 event when new raw data is added.
 - PySpark processes raw S3 data into structured datasets: `albums`, `artists`, `songs`.
 - Transformed data is stored in the **S3 Transformed zone**.
 
