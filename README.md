@@ -2,7 +2,7 @@
 
 ### 📌 Project Overview
 
-This data engineering project focuses on extracting, ingesting, transforming, and visualizing weekly updates from the **Spotify Top Songs Global Playlist** using a cloud-native ETL pipeline. The workflow simulates a modern data pipeline using **AWS services (CloudWatch, Lambda, S3, Glue)**, **Snowflake**, and **Power BI** to enable real-time trend tracking and analytics. The pipeline is designed to automatically fetch the latest top songs data weekly, transform it into structured formats, and deliver live insights through a Power BI dashboard.
+This data engineering project focuses on extracting, ingesting, transforming, and visualizing weekly updates from the **Spotify Top Global Songs** playlist using a cloud-native ETL pipeline. The workflow simulates a modern data pipeline using **AWS services (CloudWatch, Lambda, S3, Glue)**, **Snowflake**, and **Power BI** to enable real-time trend tracking and analytics. The pipeline is designed to automatically fetch the latest top songs data weekly, transform it into structured formats, and deliver live insights through a Power BI dashboard.
 
 ---
 
@@ -46,8 +46,8 @@ The project uses the [Spotify Web API](https://developer.spotify.com/documentati
 - Raw JSON data is saved into the **S3 RAW zone**, partitioned by date.
 
 2. **Data Transformation**:
-- **AWS Glue** (PySpark) processes raw S3 data.
-- The job creates structured datasets: `albums`, `artists`, `songs`.
+- **AWS Glue** job is triggered by a Lambda function on an S3 event when new raw data is added..
+- PySpark processes raw S3 data into structured datasets: `albums`, `artists`, `songs`.
 - Transformed data is stored in the **S3 Transformed zone**.
 
 3. **Data Loading**:
@@ -57,7 +57,7 @@ The project uses the [Spotify Web API](https://developer.spotify.com/documentati
 
 4. **Data Serving**:
 - **Power BI** connects directly to Snowflake.
-- Interactive dashboards track weekly song performance and artist trends.
+- Interactive dashboards track weekly song popularity and artist trends.
 
 ---
 
