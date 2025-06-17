@@ -2,7 +2,7 @@
 
 ### 📌 Project Overview
 
-This data engineering project focuses on extracting, ingesting, transforming, and visualizing weekly updates from the **Spotify Top Global Songs** playlist using a cloud-native ETL pipeline. The workflow simulates a modern data pipeline using **AWS services (CloudWatch, Lambda, S3, Glue)**, **Snowflake**, and **Power BI** to enable real-time trend tracking and analytics. The pipeline is designed to automatically fetch the latest top songs data weekly, transform it into structured formats, and deliver live insights through a Power BI dashboard.
+This data engineering project focuses on extracting, ingesting, transforming, and visualizing weekly updates from the **Spotify Top Global Songs** playlist using a cloud-native ETL pipeline. The workflow simulates a modern data pipeline using **AWS services (CloudWatch, Lambda, S3, Glue)**, **Snowflake**, and **Power BI** to enable real-time trend tracking and analytics. The pipeline is designed to automatically fetch the latest top songs data weekly, transform it into structured formats, and deliver insights through a Power BI dashboard.
 
 ---
 
